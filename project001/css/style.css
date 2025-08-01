@@ -1,0 +1,135 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+
+/* 레이아웃설정 */
+
+#wrap {
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.box1 {
+    width: 100%;
+    order: 1;
+}
+
+.box2 {
+    width: 100%;
+    order: 2;
+}
+
+.box3 {
+    width: 100%;
+    order: 3;
+}
+
+.box4 {
+    width: 100%;
+    order: 4;
+}
+
+.box5 {
+    width: 100%;
+    order: 5;
+}
+
+.box6 {
+    width: 100%;
+    order: 6;
+}
+
+.box7 {
+    width: 100%;
+    order: 7;
+}
+
+.box8 {
+    width: 100%;
+    order: 8;
+    display: flex;
+}
+
+.box8-1,
+.box8-2 {
+    width: 50%;
+}
+
+.box9 {
+    width: 100%;
+    order: 9;
+}
+
+.box10 {
+    width: 100%;
+    order: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* logo와 gnb의 가로정렬 */
+.boxA {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* 모바일에서는 플렉스디렉션을 로우에서 컬럼으로 변경해주면 됨 */
+    align-content: center;
+}
+
+.boxA>div {
+    width: auto;
+}
+
+
+
+/* 상세설정 */
+/* 상세설정에는 박스를 사용하지 않는다.박스로 부르지 마세용! */
+/* 로고설정 */
+.logo {
+    display: flex;
+}
+
+/* 유틸리티 설정 */
+.util {
+    display: flex;
+}
+
+
+/* gnb설정 */
+.gnb {
+    display: flex;
+}
+
+/* 미디어쿼리구간###################################################### */
+
+/* 태블릿구간 */
+@media(min-width:600px) and (max-width:768px) {}
+
+/* 600px이상 768px이하 설정완료구간 */

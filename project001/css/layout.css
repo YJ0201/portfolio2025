@@ -1,0 +1,1146 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* 레이아웃설정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 200px;
+}
+
+
+.box1 {
+    width: 100%;
+    order: 1;
+}
+
+.box2 {
+    width: 100%;
+    order: 2;
+}
+
+.box3 {
+    width: 100%;
+    order: 3;
+}
+
+.box4 {
+    width: 100%;
+    order: 4;
+}
+
+.box5 {
+    width: 100%;
+    order: 5;
+}
+
+.box6 {
+    width: 100%;
+    order: 6;
+}
+
+.box7 {
+    width: 100%;
+    order: 7;
+}
+
+.box8 {
+    width: 100%;
+    order: 8;
+}
+
+.box8-1,
+.box8-2 {
+    width: 50%;
+}
+
+.box9 {
+    width: 100%;
+    order: 9;
+}
+
+.box10 {
+    width: 100%;
+    order: 10;
+}
+
+.box11 {
+    width: 100%;
+    order: 11;
+}
+
+
+
+/* logo와 util의 가로정렬!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* .boxA-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+} */
+
+/* .boxA>div {
+    width: auto;
+} */
+
+
+/* nav 센터정렬 */
+.boxA-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+}
+
+
+/* 1섹션 카운트다운 정렬 */
+.box1 {
+    display: block;
+}
+
+.countdown {
+    text-align: center;
+}
+
+/* 2섹션 비디오 정렬 */
+.box2,
+.box2-1,
+.vid {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+
+}
+
+.vid video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-120px);
+}
+
+
+
+
+/* 3섹션 알고가자 펜타(라인업) 정렬*/
+.box3 {
+    display: block;
+}
+
+.box3-1 {
+    padding: 90px 60px;
+}
+
+.box3-2-1 ul,
+.box3-2-2 ul {
+    display: flex;
+}
+
+
+
+
+/* 4섹션 펜타포트 한 바퀴(부스안내갤러리) 정렬  */
+.box4-1 {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.box4-2 {
+    display: flex;
+    width: 100%;
+}
+
+.box4-2-2 {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.box4-2-2 ul {}
+
+.box4-2-2 ul li {}
+
+.box4-2-2 ul li a {}
+
+.box4-2-2 .box4-2-1 .main_img {
+    display: flex;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.box4-2-2 .sub_img {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/* 5섹션 Get ready 예매하기 정렬 */
+/* .box5 {
+    display: flex;
+}
+
+.box5-2 {
+    display: flex;
+}
+
+.box5-2-1 {
+    display: block;
+}
+
+.calender {display: flex;}
+
+.reservation {display: block;} */
+
+
+
+.box5 {
+    display: block;
+}
+
+.box5-1 {
+    display: flex;
+    padding: 60px;
+}
+
+.box5-2 {
+    display: flex;
+}
+
+/* 포스터 정렬*/
+.box5-2-1 {
+    width: 100%;
+}
+
+.poster_imgBox {
+    width: 100%;
+    padding: 0;
+}
+
+.box5-2-2 {
+    width: 100%;
+    padding: 0;
+}
+
+
+.calender {
+    margin-bottom: 10px;
+}
+
+.reservation p {
+    margin: 4px 0;
+}
+
+.reservation span {
+    margin-top: 10px;
+    padding: 8px 16px;
+}
+
+
+/* 6섹션 Re:play 년도별 갤러리 정렬 */
+.box6-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+
+}
+
+
+.box6-2 {
+    display: block;
+}
+
+
+.box6-year {
+    display: block;
+    padding: 15px 0;
+
+}
+
+
+
+
+
+
+/* 7섹션 After Vibes 후기 정렬 */
+.box7 {
+    display: flex;
+    width: 100%;
+}
+
+.box7-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.box7-2 {}
+
+
+
+/* 8-1섹션 Rock Updates 공지사항 정렬*/
+.box8 {
+    display: flex;
+    width: 100%;
+}
+
+.box8-1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box8-1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box8-1-1 h2 {}
+
+.box8-1-1 .arrow {}
+
+.box8-1-2 {}
+
+.box8-1-3 {}
+
+.box8-1-3 ul {}
+
+.box8-1-3 ul li {}
+
+.box8-1-3 ul li a {}
+
+
+
+/* 8-2섹션 Penta A to Z 자주묻는질문 정렬 */
+.box8-2 {}
+
+.box8-2-1 {}
+
+.box8-2-1 h2 {}
+
+.box8-2-1 h2 a {}
+
+.box8-2-1 .arrow {}
+
+.box8-2-2 {}
+
+.box8-2-2 ul {}
+
+.box8-2-2 ul li {}
+
+.box8-2-2 ul li details {}
+
+.box8-2-2 ul li summary {}
+
+
+/* 9섹션 주변시설안내 정렬*/
+
+.box9 {
+    display: flex;
+}
+
+.box9-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.box9-2 {
+    display: flex;
+}
+
+
+
+
+/* 10섹션 찾아오시는길 정렬*/
+
+
+
+/* 11섹션 하단로고 정렬*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 상세설정 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/* 헤더고정시키기 */
+.boxA {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background-color: #000;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+/* 로고설정 */
+.logo {}
+
+.logo a {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a:hover {
+    opacity: 0.9;
+}
+
+.logo img {
+    display: block;
+    height: 35px;
+    width: auto;
+}
+
+
+/* 유틸리티설정 */
+.util {}
+
+.util ul {}
+
+.util ul li {}
+
+.util ul li a {
+    font-size: 12px;
+    padding: 5px;
+    color: #fff;
+}
+
+/* gnb 설정 */
+.gnb {}
+
+.gnb ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gnb ul li {
+    margin: 0 20px;
+
+}
+
+.gnb ul li a {
+    font-size: 22px;
+    color: #fff;
+
+}
+
+.box1 {
+    background-image: url(../img/count/count_use.jpg);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* 1섹션 카운트다운설정 */
+.countdown {
+    padding: 90px;
+
+    /* 이미지 반복되지 않게 */
+}
+
+.countdown h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.countdown p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FF6194;
+}
+
+.countdown time {
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+
+
+/* 2섹션 비디오설정 */
+.vid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.vid video {
+    width: 100%;
+    min-width: 1080px;
+}
+
+
+/* 3섹션 알고가자 펜타(라인업) 설정 */
+.box3 {
+    background-color: skyblue;
+
+}
+
+.box3-1 {}
+
+
+.box3-2-1 {
+    padding: 20px;
+}
+
+.box3-2-1 ul {}
+
+.box3-2-1 ul li {
+    padding: 40px;
+}
+
+.box3-2-1 ul li a {}
+
+
+
+.box3-2-1 .imgBox img {
+    display: flex;
+    width: 537px;
+    height: 444px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+.box3-2-2 {
+    padding: 80px;
+}
+
+.box3-2-2 ul {}
+
+.box3-2-2 ul li {
+    padding: 20px;
+}
+
+.box3-2-2 ul li a {}
+
+
+
+.box3-2-2 .imgBox img {
+    display: flex;
+    width: 537px;
+    height: 162px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* 4섹션 펜타포트 한 바퀴(부스안내갤러리) 설정  */
+.box4 {
+    background-color: #bbb;
+    padding: 100px;
+}
+
+.box4-2-1 {
+    width: 750px;
+    height: 450px;
+}
+
+
+.box4-2-1 .main_img {
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+
+
+
+.box4-2-2 .sub_img {
+    display: flex;
+    width: 320px;
+    height: 220px;
+}
+
+.box4-2-2 .sub_img1 {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: skyblue;
+
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+.box4-2-2 .sub_img2 {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: skyblue;
+
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+.box4-2-2 .sub_img3 {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: skyblue;
+
+    border-radius: 5px;
+
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.box4-2-2 .sub_img4 {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: skyblue;
+
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* 5섹션 Get ready 예매하기 설정 */
+.box5 {
+    background-color: antiquewhite;
+}
+
+
+
+.box5-2 {
+    padding: 100px;
+}
+
+.poster_imgBox {
+    width: 440px;
+
+    height: 590px;
+}
+
+.box5-2-2 {
+    width: 955px;
+
+    height: 590px;
+
+    background-color: skyblue;
+
+    border-radius: 5px;
+
+    border: 2px solid #333
+}
+
+
+
+
+
+/* 6섹션 Re:play 년도별 갤러리 설정 */
+.box6 {
+    background-color: #eef5ff
+}
+
+
+.box6-2-1 {}
+
+.box6-2-1 .box6-imgBox {
+    width: 1160px;
+    height: 490px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+
+
+.box6-2-2 {}
+
+.box6-2-2 ul {}
+
+.box6-2-2 ul li {
+    width: 350px;
+
+    height: 200px;
+
+    background-color: rosybrown;
+
+    border-radius: 5px;
+
+    border: 1px solid #333;
+
+    box-sizing: border-box;
+}
+
+.box6-2-2 ul li a {}
+
+.box6-year {}
+
+.box6-year ul {}
+
+
+.box6-year ul li {
+
+
+    width: 100px;
+
+    height: 50px;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    border-radius: 5px;
+
+    border: 1px solid #000;
+
+    box-sizing: border-box;
+
+
+}
+
+.box6-year ul li a {}
+
+
+
+
+
+/* 7섹션 After Vibes 후기 설정 */
+.box7 {
+    background-color: #ffcc00;
+}
+
+
+
+
+.box7-2 {
+    display: flex;
+}
+
+.box7-2 ul {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+}
+
+.box7-2 ul li {
+    flex: 0 0 260px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, flex-basis 0.3s ease;
+    margin-right: 20px;
+}
+
+.box7-2 ul li:nth-child(2) {
+    flex: 0 0 320px;
+    transform: scale(1.05);
+    background-color: #eef5ff;
+}
+
+
+.box7-2 ul li:last-child {
+    margin-right: 0;
+}
+
+
+.box7-2 ul li p {
+    font-size: 14px;
+    color: #444;
+}
+
+.box7-2 ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+.box7-2 ul li hr {
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, #4436A8, #FF6194, #E3E4E9);
+    border: none;
+    margin: 20px 0;
+    border-bottom: 1px solid linear-gradient(to right, #4436A8, #FF6194, #E3E4E9);
+}
+
+
+
+.user-info {
+    width: 750px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.id {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.star {
+    color: #ffcc00;
+    font-size: 16px;
+}
+
+
+/* 8-1섹션 Rock Updates 공지사항 설정*/
+.box8 {
+    background-color: skyblue;
+}
+
+.box8-1-2 {
+
+    width: 550px;
+
+    height: auto;
+
+    background-color: #fff;
+
+    border-radius: 5px;
+
+    border: 1px solid #333;
+
+    box-sizing: border-box;
+}
+
+.box8-1-2 p {}
+
+.box8-1-2 ul {}
+
+.box8-1-2 ul li {}
+
+
+
+.box8-1-3 {}
+
+.box8-1-3 ul {}
+
+.box8-1-3 ul li {}
+
+
+
+
+
+
+/* 8-2섹션 Penta A to Z 자주묻는질문 설정 */
+.box8-2-2 ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.box8-2-2 li {
+    margin-bottom: 20px;
+}
+
+.box8-2-2 details {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px #bbb;
+    transition: background-color 0.3s ease;
+}
+
+
+.box8-2-2 summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* 
+커스텀 꺽쇠 아이콘 만들기 
+.box8-2-2 summary::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.3s ease;
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 16px;
+} */
+
+.box8-2-2 summary hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0 15px;
+}
+
+.box8-2-2 p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.box8-2-2 summary:hover {
+    background-color: skyblue;
+    border-radius: 6px;
+}
+
+
+
+/* 9섹션 주변시설안내 */
+.box9 {
+    background-color: #bbb;
+}
+
+
+.box9-2 {}
+
+.box9-2 ul {}
+
+.box9-2 ul li {
+    display: flex;
+    width: 438xp;
+    height: 506px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+
+}
+
+.box9-2 ul li a {}
+
+
+
+
+/* 10섹션 찾아오시는길 */
+.box10 {
+    display: flex;
+    padding: 60px;
+    background-color: skyblue;
+}
+
+
+.box10-2 .google-map {
+    width: 438px;
+    height: 506px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+.car {
+    width: 438xp;
+    height: 506px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+.add {
+    width: 438xp;
+    height: 506px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+
+    border: 2px solid #333;
+
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* 11섹션 하단로고 설정 */
+.box11-1 img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+
+
+
+/* 푸터 설정 */
+.boxC-2 {
+    display: flex;
+}
+
+
+
+
+/* 탑버튼 설정 */
+
+
+
+
+
+
+/* 피드백~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.boxA-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+
+.util {}
+
+.util ul {
+    display: flex;
+}
+
+.util ul li {}
+
+.util ul li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간###################################################### */
+
+/* 태블릿구간 */
+@media(min-width:600px) and (max-width:768px) {}
+
+/* 600px이상 768px이하 설정완료구간 */
