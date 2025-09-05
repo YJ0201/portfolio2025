@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dyson project02</title>
+
+    <!-- 외부스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리연결 -->
+    <script src=""></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 외부스크립트 연결 -->
+    <script src="js.js"></script>
+
+    <!-- 폰트어썸 연결 CDN -->
+    <script src="https://kit.fontawesome.com/6723bb80e4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="shopping">
+        <p class="icon"><i class="fa-solid fa-basket-shopping"></i><span>0</span></p>
+        <div class="cart_page">
+            <div class="cart-header">
+                <div class="market">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <h3>장바구니</h3>
+                </div>
+                <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class=" title">
+                <div><b>제품명</b></div>
+                <div><b>금액</b></div>
+            </div>
+
+            <table class="cart-table">
+
+                <thead>
+                    <tr>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <div class="total-section">
+                <div class="pri">총 합계금액</div>
+                <div class="won"><b>원</b></div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="btn-group">
+                <button class="btn-delete">전체삭제</button>
+                <button class="btn-pay">결제하기</button>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="gnb">
+            <div class="logo">
+                <a href=""><img src="img/logo/Dyson_logo.svg" alt="로고"></a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="">다이슨</a></li>
+                    <li><a href="">대표제품</a></li>
+                    <li><a href="">추천제품</a></li>
+                    <li><a href="">프로모션</a></li>
+                    <li><a href="">고객지원</a></li>
+                </ul>
+            </nav>
+
+            <div class="util">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href=""><i class="fa-regular fa-user"></i></a> </li>
+                    <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li> <!-- 검색 아이콘 -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="wrap">
+        <section class="main">
+            <div class="txtBox">
+                <img src="img/logo/airwrap_coanda_logo.png" alt="">
+                <h2>완전히 새로워진 <br>
+                    멀티 스타일러</h2>
+                <p>완별한 컬. 더 빠른 드라이. 이제는 스트레이트까지.<br>
+                    과도한 열 손상 없이 완성하세요.<br>
+                    <br>
+                    다이슨 에어랩 i.d. 멀티 스타일러 앤 드라이어 대비.
+                </p>
+            </div>
+            <div class="imgBox">
+                <img src="img/main/main_02.png" alt="">
+                <img src="img/main/main_pr.png" alt="">
+                <div class="blur-circle"></div>
+                <div class="main_btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="main_btn_back">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <!-- 브랜드 스토리 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="brand">
+            <h2>브랜드 스토리</h2>
+            <div class="sub_title">About As</div>
+            <p>혁신의 역사를 담은 다이슨의 성장 스토리</p>
+            <ul>
+                <li>
+                    <img src="img/brand/Union.png" alt="">
+                    <div class="circle"></div>
+                    <h2>01</h2>
+                    <strong>기술의 시작 (1991)</strong>
+                    <p>영국에서 Dyson Ltd.설립 <br>
+                        공기역학 기반의 모터 기술로 <br>
+                        프리미엄 가전 시장 개척</p>
+                </li>
+                <li>
+                    <img src="img/brand/Union.png" alt="">
+                    <div class="circle"></div>
+                    <h2>02</h2>
+                    <strong>한국 진출 &헤어 혁신 (2016)</strong>
+                    <p>다이슨코리아 설립 <br>
+                        첫 헤어 드라이어 Supersonic™ 출시 및 <br>
+                        ‘헤어 과학’ 시장 진입</p>
+                </li>
+                <li>
+                    <img src="img/brand/Union.png" alt="">
+                    <div class="circle"></div>
+                    <h2>03</h2>
+                    <strong>스타일링 기술의 확장 <br>(2018-2020)</strong>
+                    <p>Airwrap™ 및 Corrale™ 연속 출시 <br>
+                        열 손상 최소화, 사용자 중심의 <br>
+                        스타일링 기술 구현</p>
+                </li>
+                <li>
+                    <img src="img/brand/Union.png" alt="">
+                    <div class="circle"></div>
+                    <h2>04</h2>
+                    <strong>새로운 뷰티 경험으로 <br>
+                        (2021-Now)</strong>
+                    <p>스타일랩, 앱 연동 기기, 한국 맞춤형 <br>
+                        서비스 확장 및 지속 가능한 기술 <br>
+                        기반의 프리미엄 뷰티 여정 지속</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- 컬러효과 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="color">
+            <img src="img/Signature/line02.png" alt="">
+        </section>
+
+
+
+        <!-- 시그니처제품 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="sig">
+            <div class="sig_title">
+                <h2>시그니처 제품</h2>
+                <div class="sub_title">Signature Products</div>
+                <p>전 세계가 선택한 다이슨의 대표 기술력 제품</p>
+            </div>
+
+            <div class="list">
+                <div class="liner"></div>
+                <article>
+                    <div class="num_box">
+                        <h2>01</h2>
+                    </div>
+                    <div class="img_box">
+                        <img src="img/Signature/product_01.jpg" alt="">
+                    </div>
+
+                    <div class="text_icon_row">
+                        <p>New 다이슨 에어랩 코안다 2x <br>
+                            멀티 스타일러 앤 드라이어 <br>
+                            (세라믹 핑크&로즈 골드)
+                        </p>
+
+                        <div class="icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                    </div class="text_icon_row">
+                    <div class="price">&#8361;879,000</div>
+                </article>
+
+                <div class="liner"></div>
+                <article>
+                    <div class="num_box">
+                        <h2>02</h2>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="img/Signature/product_02.jpg" alt="">
+                    </div>
+
+                    <div class="text_icon_row">
+                        <p>다이슨 슈퍼소닉 r 헤어드라이어 <br>
+                            (세라믹 핑크_로즈 골드) 및 <br>
+                            보관 케이스
+                        </p>
+
+                        <div class="icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                            </ul>
+                            <div class="price">&#8361;629,000</div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="liner"></div>
+                <article>
+                    <div class="num_box">
+                        <h2>03</h2>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="img/Signature/product_03.jpg" alt="">
+                    </div>
+
+                    <div class="text_icon_row">
+                        <p>다이슨 에어스트레이트 <br>
+                            스트레이트너(니켈_코퍼) <br>
+
+                        </p>
+
+                        <div class="icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="price">&#8361;499,000</div>
+                    </div>
+                </article>
+
+                <div class="liner"></div>
+                <article>
+
+                    <div class="num_box">
+                        <h2>04</h2>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="img/Signature/product_04.jpg" alt="">
+                    </div>
+
+                    <div class="text_icon_row">
+                        <p>다이슨 슈퍼소닉 <br>
+                            뉴럴 헤어드라이어 <br>
+                            (스트로베리 브론즈_블러시 핑크)
+                        </p>
+
+                        <div class="icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">&#8361;499,000</div>
+                </article>
+
+                <div class="liner"></div>
+                <article>
+                    <div class="num_box">
+                        <h2>05</h2>
+                    </div>
+
+                    <div class="img_box">
+                        <img src="img/Signature/product_05.jpg" alt="">
+                    </div>
+
+                    <div class="text_icon_row">
+                        <p>다이슨 에어랩 i.d.™ <br>
+                            멀티 스타일러 앤 드라이어 <br>
+                            (빈카블루-토파즈)
+                        </p>
+
+                        <div class="icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">&#8361;699,000원</div>
+
+                </article>
+            </div>
+        </section>
+
+
+
+        <!-- 비디오 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+        <section class="video">
+            <img src="img/video/cap/dyson_airwrap_010.jpg" alt="">
+        </section>
+
+
+
+
+        <!-- 추천제품 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="per">
+            <h2>당신을 위한 추천</h2>
+            <div class="sub_title">Personalized</div>
+            <ul>
+                <li>
+                    <div class="img_box">
+                        <a href="">
+                            <img src="img/Personalized/product_01.jpg" alt="">
+                        </a>
+                    </div>
+
+
+
+                    <div class="txt_box">
+
+                        <a href="">
+                            <h3>다이슨 에어랩 i.d. <br>
+                                멀티 스타일러 앤 드라이어</h3>
+                        </a>
+                        <span class="pro-price">₩699,000</span>
+                    </div>
+
+                    <div class="icon">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li>
+
+                    <div class="img_box">
+                        <a href="">
+                            <img src="img/Personalized/product_02.jpg" alt="">
+                        </a>
+                    </div>
+
+
+                    <div class="txt_box">
+                        <a href="">
+                            <h3>다이슨 슈퍼소닉 뉴럴 <br>
+                                헤어드라이어 set</h3>
+                        </a>
+                        <del class="ori-price">₩599,000</del>
+                        <span class="disco">17%</span>
+                        <span class="pro-price">₩499,000</span>
+
+                    </div>
+                    <div class="icon">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+
+                <li>
+                    <div class="img_box">
+                        <a href="">
+                            <img src="img/Personalized/product_03.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <a href="">
+                            <h3 class>다이슨 코랄 스타일 스트레이트너</h3>
+                        </a>
+                        <del class="ori-price">₩599,000</del>
+                        <span class="disco">17%</span>
+                        <span class="pro-price">₩499,000</span>
+                    </div>
+                    <div class="icon">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="img_box">
+                        <a href="">
+                            <img src="img/Personalized/product_04.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="txt_box">
+                        <a href="">
+                            <h3 class>NEW 다이슨 에어랩 코안다 <br>
+                                2x 멀티 스타일러 앤 드라이어</h3>
+                        </a>
+                        <span class="pro-price">₩879,000</span>
+                    </div>
+
+                    <div class="icon">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="img_box">
+                            <img src="img/Personalized/product_05.jpg" alt="">
+                    </a>
+
+                    <div class="txt_box">
+                        <a href="">
+                            <h3 class>다이슨 슈퍼소닉 r <br>
+                                헤어드라이어 (재스퍼 플럼) set</h3>
+                        </a>
+                        <span class="pro-price">₩629,000</span>
+                    </div>
+                    <div class="icon">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <!-- 리뷰섹션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="review">
+
+            <div class="txt_box">
+                <h2>사용자 경험 이야기</h2>
+                <div class="sub_title">Review</div>
+                <p>실제 사용자들이 직접 경험한 생생한 리뷰를 <br>
+                    확인해보세요.</p>
+                <span><a href="">더보기</a></span>
+            </div>
+
+            <div class="review_list">
+                <ul>
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">dysonch1537</p>
+                        </div>
+                        <img src="img/review/review_01.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>머리 손상 없이도 스타일 완성돼요!</h3>
+                            <p>드디어 인생템 찾았어요. <br>
+                                예열 시간 거의 없고 바로 스타일링 가능해요. <br>
+                                바람 세기 조절이 직관적이라 사용이 편하네요. <br>
+                                머릿결이 덜 상해서 매일 써도 걱정 없어요. <br>
+                                컬도 자연스럽게 잘 나오고 오래가요.<br>
+                                확실히 기존 고데기랑 차원이 달라요.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">ekdltmschlrh</p>
+                        </div>
+                        <img src="img/review/review_02.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                머리 말리는 시간이 반으로 줄었어요</h3>
+                            <p>처음에는 그냥 비싼 드라이어겠지 했는데, <br>
+                                써보니 차원이 다르더라고요. <br>
+                                바람 세기부터 온도까지 섬세하게 조절되는게 <br>
+                                진짜 신기했어요. 모발이 두꺼운 편인데 5분도 <br>
+                                안 돼서 다 말라서 깜짝 놀랐어요.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">ekdltms1165</p>
+                        </div>
+                        <img src="img/review/review_03.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>한 번 지나가기만 해도 머리가 매끈</h3>
+                            <p>
+                                이 스트레이트기는 열이 균일하게 전달되서 <br>
+                                머릿결이 훨씬 덜 상해요. <br>
+                                모발이 얇은 편인데도 한 번에 매끄럽게 펴져서 <br>
+                                만족스러워요. 무엇보다도 손에 착 감기는 <br>
+                                그립감이 너무 편해서 매일 쓰게 돼요. <br>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">gyrhkchlrh</p>
+                        </div>
+                        <img src="img/review/review_04.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>출장이나 여행 갈 때 필수템</h3>
+                            <p>
+                                저는 장거리 출장이나 여행을 자주 다니는 <br>
+                                편이라 휴대성도 중요하거든요. <br>
+                                에어랩은 생각보다 가볍고 구성품도 알차서 <br>
+                                파우치에 쏙 들어가요. 호텔 드라이어보다 훨씬 <br>
+                                강력하고 스타일링도 한결 쉬워졌어요. <br>
+                                머리를 말리면서 동시에 볼륨이나 컬을 <br>
+                                살릴 수 있어서 정말 편해요.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">mcht7753</p>
+                        </div>
+                        <img src="img/review/review_05.jpg" alt="">
+
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>인생 드라이기에요</h3>
+                            <p>
+                                예전엔 드라이기만 쓰면 두피가 따갑고 <br>
+                                간지러웠는데, 이건 정말 달라요. <br>
+                                온풍이 부드럽고 열이 고르게 퍼져서 <br>
+                                자극이 거의 없어요. 냉풍 기능도 실제로 <br>
+                                시원하고 강해서 마무리용으로 딱이에요. <br>
+                                정전기도 덜 생겨서 머리 정리가 쉬워졌어요.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">dysonch1537</p>
+                        </div>
+                        <img src="img/review/review_01.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>머리 손상 없이도 스타일 완성돼요!</h3>
+                            <p>드디어 인생템 찾았어요. <br>
+                                예열 시간 거의 없고 바로 스타일링 가능해요. <br>
+                                바람 세기 조절이 직관적이라 사용이 편하네요. <br>
+                                머릿결이 덜 상해서 매일 써도 걱정 없어요. <br>
+                                컬도 자연스럽게 잘 나오고 오래가요.<br>
+                                확실히 기존 고데기랑 차원이 달라요.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">ekdltmschlrh</p>
+                        </div>
+                        <img src="img/review/review_02.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>
+                                머리 말리는 시간이 반으로 줄었어요</h3>
+                            <p>처음에는 그냥 비싼 드라이어겠지 했는데, <br>
+                                써보니 차원이 다르더라고요. <br>
+                                바람 세기부터 온도까지 섬세하게 조절되는게 <br>
+                                진짜 신기했어요. 모발이 두꺼운 편인데 5분도 <br>
+                                안 돼서 다 말라서 깜짝 놀랐어요.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">ekdltms1165</p>
+                        </div>
+                        <img src="img/review/review_03.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>한 번 지나가기만 해도 머리가 매끈</h3>
+                            <p>
+                                이 스트레이트기는 열이 균일하게 전달되서 <br>
+                                머릿결이 훨씬 덜 상해요. <br>
+                                모발이 얇은 편인데도 한 번에 매끄럽게 펴져서 <br>
+                                만족스러워요. 무엇보다도 손에 착 감기는 <br>
+                                그립감이 너무 편해서 매일 쓰게 돼요. <br>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">gyrhkchlrh</p>
+                        </div>
+                        <img src="img/review/review_04.jpg" alt="">
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>출장이나 여행 갈 때 필수템</h3>
+                            <p>
+                                저는 장거리 출장이나 여행을 자주 다니는 <br>
+                                편이라 휴대성도 중요하거든요. <br>
+                                에어랩은 생각보다 가볍고 구성품도 알차서 <br>
+                                파우치에 쏙 들어가요. 호텔 드라이어보다 훨씬 <br>
+                                강력하고 스타일링도 한결 쉬워졌어요. <br>
+                                머리를 말리면서 동시에 볼륨이나 컬을 <br>
+                                살릴 수 있어서 정말 편해요.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="writer">
+                            <strong>작성자</strong>
+                            <p class="id">gyrhkchlrh</p>
+                        </div>
+                        <img src="img/review/review_05.jpg" alt="">
+
+                        <div class="score">
+                            <p class="num">5.0</p>
+                            <p class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <h3>인생 드라이기에요</h3>
+                            <p>
+                                예전엔 드라이기만 쓰면 두피가 따갑고 <br>
+                                간지러웠는데, 이건 정말 달라요. <br>
+                                온풍이 부드럽고 열이 고르게 퍼져서 <br>
+                                자극이 거의 없어요. 냉풍 기능도 실제로 <br>
+                                시원하고 강해서 마무리용으로 딱이에요. <br>
+                                정전기도 덜 생겨서 머리 정리가 쉬워졌어요.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 이벤트섹션 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="event">
+            <div class="txt_box">
+                <h2>프로모션 안내</h2>
+                <div class="sub_title">Event</div>
+                <p>다이슨 프로모션 한정 기간, 특별한 혜택을 놓치지 마세요</p>
+            </div>
+
+            <div class="list_box">
+                <div class="levent">
+                    <div class="event_01">
+                        <div class="txt_01">
+                            <h3>리뷰 이벤트 혜택</h3>
+                            <p>한정 기간, 리뷰 이벤트 참여하면 <br>
+                                전원 5만원 액세서리 바우처 <br>
+                                <strong>100% 증정</strong>
+                            </p>
+                            <a href=""><span>자세히 보기</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revent">
+                    <div class="event_02">
+                        <div class="txt_02">
+                            <h3>뉴스레터 구독 혜택</h3>
+                            <p>다이슨 뉴스레터를 구독하고, <br>
+                                <strong>5% 할인 혜택</strong>을 받아보세요.
+                            </p>
+                            <a href=""><span>자세히 보기</span></a>
+                        </div>
+                    </div>
+
+                    <div class="event_03">
+                        <div class="txt_03">
+                            <h3>라이브 커머스 특별혜택</h3>
+                            <p>공식몰 라이브 문자 알림을 설정하고 <br>
+                                공식몰과 다이슨 코리아 유튜브 채널에서 진행되는 <br>
+                                <strong>라이브 커머스 특별 혜택</strong>을 만나보세요.
+                            </p>
+                            <a href=""><span>자세히 보기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- 고객지원 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section class="support">
+            <div class="txt_box">
+                <h2>다이슨 둘러보기</h2>
+            </div>
+
+            <div class="list_box">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <h4>멤버십 혜택 알아보기</h4>
+                            <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <p>신규회원 가입시, <br>
+                            기존회원 혜택을 알아보세요</p>
+                    </li>
+
+                    <li>
+                        <div class="title">
+                            <h4>공지사항 바로가기</h4>
+                            <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <p>다이슨의 최근 이슈들을 <br>
+                            함께 알아보세요!</p>
+
+                    </li>
+
+                    <li>
+                        <div class="title">
+                            <h4>메뉴얼 가이드</h4>
+                            <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <p>처음 만나는 다이슨, 이렇게 써보세요. <br>
+                            쉽고 간단한 사용 가이드에요!</p>
+
+                    </li>
+
+                    <li>
+                        <div class="title">
+                            <h4>프리미엄 제품 등록하기</h4>
+                            <a href=""><i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                        <p>구매하신 프리미엄 제품을 <br>
+                            등록하고 혜택 받으세요!</p>
+
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- 푸터설정 -->
+    <footer>
+        <div class="footer_txt">
+            <p>본 사이트는 포트폴리오용으로 제작된 사이트입니다.</p>
+            <p>copyright &copy; 2025. YJ .All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <!-- 서브페이지설정 -->
+    <div id="sub01">
+        제품상세(서브)페이지 1번입니다.
+    </div>
+
+
+    <!-- 로그인페이지설정 -->
+    <div id="sub02">
+        로그인페이지입니다.
+        <div class="login_box">
+            <div class="logo">
+                <img src="img/login/Dyson_login_logo.png" alt="logo">
+            </div>
+            <div class="login-box">
+                <form action="/login" method="POST">
+                    <input type="text" name="username" placeholder="아이디" required>
+                    <input type="password" name="password" placeholder="비밀번호" required>
+                    <button type="submit">로그인</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- 탑버튼 -->
+    <button id="topBtn" title="맨 위로">Top</button>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
