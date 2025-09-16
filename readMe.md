@@ -19,27 +19,27 @@
 # 💼 Projects
 
 ## 1️⃣ Project 01 : 인천펜타포트락페스티벌 반응형 웹사이트
-> 한 줄 소개 (예: 반응형 웹사이트 리뉴얼 프로젝트)
+> 반응형 웹사이트 리뉴얼 프로젝트
 
 **📆 제작 기간** : 2025.06.01 ~ 2025.06.28  
-**🧑 역할** : 디자인 100%, 퍼블리싱 100%, 기획50% 참여  
+**🧑 역할** : 기획50% , 디자인 100%, 퍼블리싱 100% 
 
 ### ⭐ 프로젝트 설명
-단순화되어 있던 기존사이트를 보다 편리하게 사용가능 하도록 주요기능과 핵심정보를 추가하여
-리뉴얼한 프로젝트 입니다.
+단순화되어 있던 기존사이트를 보다 편리하게 사용가능 하도록
+주요기능과 핵심정보를 추가하여 리뉴얼한 프로젝트 입니다.
 
-- 메인컬러 : 우주와 몽환을 상징하는 딥퍼플 + 에너지와 젊음을 담은 생기 넘치는 포인트 컬러,
-어둠 속 별빛처럼 빛나는 하이라이트, 그리고 메탈릭 실버의 미래지향적 감성을 조화롭게 담아냄
+- 메인컬러 : 일렉트릭 퍼플 + 핫핑크 + 미드나잇 블루 + 페일 그레이
+
 - 메인페이지 + 예약 및 예매창 + 공지사항 페이지 제작 + 구글지도 연동 
 
 ### 🚀 링크
-- [무드보드] (https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=39-25&t=2VvaSvF339vuLiNH-1)
+- [무드보드](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=39-25&t=2VvaSvF339vuLiNH-1)
 - [인포메이션 아키텍쳐](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=670-428&t=2VvaSvF339vuLiNH-1)
 - [플로우차트](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=216-517&t=2VvaSvF339vuLiNH-1)
 - [와이어프레임](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=254-1059&t=2VvaSvF339vuLiNH-1)
 - [디자인](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=393-1107&t=2VvaSvF339vuLiNH-1)
-- [코드 저장소](링크)
-- [최종 사이트](링크)
+- [코드 저장소](https://github.com/YJ0201/portfolio2025/tree/main/project001)
+- [최종 사이트](https://yj0201.github.io/portfolio2025/project001/layout.html)
 
 ### 👀 페이지 미리보기
 | 메인 | 서브 | |
@@ -49,7 +49,7 @@
 ---
 
 ## 2️⃣ Project 02 : 다이슨 헤어케어 웹사이트
-> 한 줄 소개 (예: 모바일 전용 쇼핑몰 제작 프로젝트)
+> 제품형 웹페이지 리뉴얼프로젝트
 
 **📆 제작 기간** : 2025.07.01 ~ 2025.07.20  
 **🧑 역할** : 기획 100%, 디자인 100%, 퍼블리싱 100%
@@ -57,8 +57,7 @@
 ### ⭐ 프로젝트 설명
 모바일 환경 최적화를 목표로 제작한 쇼핑몰 사이트입니다.  
 
-- **반응형**으로 모든 디바이스에서 최적화  
-- **Swiper** 슬라이드, **탭메뉴**, **모달창** 구현
+- **Swiper** 슬라이드, **탭메뉴**, **모달창** , 제품상세페이지(서브), 로그인페이지, 장바구니 기능 구현
 
 ### 🚀 링크
 - [디자인 시안](링크)
@@ -72,7 +71,7 @@
 
 ---
 
-## 3️⃣ Project 03 : 픽사 웹사이트
+## 3️⃣ Project 03 : 
 > 한 줄 소개 (예: 반응형 포트폴리오 웹사이트 제작)
 
 **📆 제작 기간** : 2025.09.01 ~ 2025.09.30  
