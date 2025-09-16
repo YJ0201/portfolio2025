@@ -60,7 +60,10 @@
 - **Swiper** 슬라이드, **탭메뉴**, **모달창** , 제품상세페이지(서브), 로그인페이지, 장바구니 기능 구현
 
 ### 🚀 링크
-- [디자인 시안](링크)
+- [무드보드](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=28-7&t=IUIBkvGtfckz9jJ7-1)
+- [와이어프레임](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=106-102&t=IUIBkvGtfckz9jJ7-1)
+- [디자인 시안(메인)](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=537-112&t=IUIBkvGtfckz9jJ7-1)
+- [디자인 시안(서브)](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=1-4&t=IUIBkvGtfckz9jJ7-1)
 - [코드 저장소](링크)
 - [배포 사이트](https://yj0201.github.io/portfolio2025/project002/)
 
