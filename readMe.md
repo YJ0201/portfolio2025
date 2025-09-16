@@ -21,7 +21,7 @@
 ## 1️⃣ Project 01 : 인천펜타포트락페스티벌 반응형 웹사이트
 > 반응형 웹사이트 리뉴얼 프로젝트
 
-**📆 제작 기간** : 2025.06.01 ~ 2025.06.28  
+**📆 제작 기간** : 2025.06.01 ~ 2025.07.30
 **🧑 역할** : 기획50% , 디자인 100%, 퍼블리싱 100% 
 
 ### ⭐ 프로젝트 설명
@@ -39,7 +39,7 @@
 - [와이어프레임](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=254-1059&t=2VvaSvF339vuLiNH-1)
 - [디자인](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=393-1107&t=2VvaSvF339vuLiNH-1)
 - [코드 저장소](https://github.com/YJ0201/portfolio2025/tree/main/project001)
-- [최종 사이트](https://yj0201.github.io/portfolio2025/project001/layout.html)
+- [배포 사이트](https://yj0201.github.io/portfolio2025/project001/layout.html)
 
 ### 👀 페이지 미리보기
 | 메인 | 서브 | |
@@ -51,13 +51,17 @@
 ## 2️⃣ Project 02 : 다이슨 헤어케어 웹사이트
 > 제품형 웹페이지 리뉴얼프로젝트
 
-**📆 제작 기간** : 2025.07.01 ~ 2025.07.20  
+**📆 제작 기간** : 2025.08.01 ~ 2025.08.30  
 **🧑 역할** : 기획 100%, 디자인 100%, 퍼블리싱 100%
 
 ### ⭐ 프로젝트 설명
-모바일 환경 최적화를 목표로 제작한 쇼핑몰 사이트입니다.  
+다이슨(Dyson)의 헤어케어 제품을 중심으로 한 브랜드 웹사이트를 제작하였습니다.
+브랜드의 고유한 아이덴티티를 웹사이트 전반에 녹여내기 위해 다이슨의 핵심 컨셉과 색상을 적극적으로 활용하였으며,
+이를 통해 사용자에게 일관된 브랜드 경험을 제공하고자 하였습니다. 또한 사용자 편의성을 고려해 장바구니 기능을 추가함으로써,
+제품 탐색에서 구매까지의 흐름이 자연스럽고 효율적으로 이어질 수 있도록 설계하였습니다.
+브랜드의 정체성을 시각적으로 강화하면서도 실제 사용성을 고려한 UI/UX 구현에 중점을 둔 프로젝트입니다.
 
-- **Swiper** 슬라이드, **탭메뉴**, **모달창** , 제품상세페이지(서브), 로그인페이지, 장바구니 기능 구현
+- **Swiper** 슬라이드, **탭메뉴**, 제품상세페이지(서브), 로그인페이지, 장바구니 기능 구현
 
 ### 🚀 링크
 - [무드보드](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=28-7&t=IUIBkvGtfckz9jJ7-1)
