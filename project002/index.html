@@ -20,6 +20,17 @@
     <!-- 폰트어썸 연결 CDN -->
     <script src="https://kit.fontawesome.com/6723bb80e4.js" crossorigin="anonymous"></script>
 
+
+    <link rel="apple-touch-icon" href="img/icon/dyson_icon.png">
+    <link rel="shortcut icon" href="img/icon/dyson_icon.png">
+
+    <!-- 네이버 로그인 연결 -->
+<script src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -44,7 +55,6 @@
 
                 <thead>
                     <tr>
-
                     </tr>
                 </thead>
                 <tbody>
@@ -174,9 +184,14 @@
 
         <!-- 컬러효과 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
         <section class="color">
-            <img src="img/Signature/line02.png" alt="">
+            <div class="spacer"></div>
+            <div class="line-wrapper-container">
+                <div class="line-wrapper" id="colorLineWrapper">
+                    <img src="img/Signature/line02.png" alt="line" class="line" id="colorLineImage">
+                </div>
+            </div>
+            <div class="line_content"></div>
         </section>
-
 
 
         <!-- 시그니처제품 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
@@ -209,7 +224,8 @@
                                 <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
                             </ul>
                         </div>
-                    </div class="text_icon_row">
+                    </div> <!-- 닫는 태그 수정 -->
+
                     <div class="price">&#8361;879,000</div>
                 </article>
 
@@ -234,10 +250,10 @@
                                 <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
                                 <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
                             </ul>
-                            <div class="price">&#8361;629,000</div>
                         </div>
                     </div>
 
+                    <div class="price">&#8361;629,000</div>
                 </article>
 
                 <div class="liner"></div>
@@ -253,7 +269,6 @@
                     <div class="text_icon_row">
                         <p>다이슨 에어스트레이트 <br>
                             스트레이트너(니켈_코퍼) <br>
-
                         </p>
 
                         <div class="icon">
@@ -262,13 +277,13 @@
                                 <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
                             </ul>
                         </div>
-                        <div class="price">&#8361;499,000</div>
                     </div>
+
+                    <div class="price">&#8361;499,000</div>
                 </article>
 
                 <div class="liner"></div>
                 <article>
-
                     <div class="num_box">
                         <h2>04</h2>
                     </div>
@@ -290,6 +305,7 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="price">&#8361;499,000</div>
                 </article>
 
@@ -316,8 +332,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="price">&#8361;699,000원</div>
 
+                    <div class="price">&#8361;699,000원</div>
                 </article>
             </div>
         </section>
@@ -333,7 +349,7 @@
 
 
 
-        <!-- 추천제품 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <!-- 추천제품 설정 -->
         <section class="per">
             <h2>당신을 위한 추천</h2>
             <div class="sub_title">Personalized</div>
@@ -341,128 +357,85 @@
                 <li>
                     <div class="img_box">
                         <a href="">
-                            <img src="img/Personalized/product_01.jpg" alt="">
+                            <img src="img/Personalized/product_01.jpg" alt="다이슨 에어랩 i.d. 멀티 스타일러 앤 드라이어">
                         </a>
                     </div>
 
-
-
                     <div class="txt_box">
-
                         <a href="">
-                            <h3>다이슨 에어랩 i.d. <br>
-                                멀티 스타일러 앤 드라이어</h3>
+                            <h3>다이슨 에어랩 i.d. <br> 멀티 스타일러 앤 드라이어</h3>
                         </a>
                         <span class="pro-price">₩699,000</span>
                     </div>
-
-                    <div class="icon">
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        </ul>
-                    </div>
                 </li>
 
-
                 <li>
-
                     <div class="img_box">
                         <a href="">
-                            <img src="img/Personalized/product_02.jpg" alt="">
+                            <img src="img/Personalized/product_02.jpg" alt="다이슨 슈퍼소닉 뉴럴 헤어드라이어 set">
                         </a>
                     </div>
 
-
                     <div class="txt_box">
                         <a href="">
-                            <h3>다이슨 슈퍼소닉 뉴럴 <br>
-                                헤어드라이어 set</h3>
+                            <h3>다이슨 슈퍼소닉 뉴럴 <br> 헤어드라이어 set</h3>
                         </a>
                         <del class="ori-price">₩599,000</del>
-                        <span class="disco">17%</span>
-                        <span class="pro-price">₩499,000</span>
-
-                    </div>
-                    <div class="icon">
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        </ul>
+                        <div class="discount-container">
+                            <span class="disco">17%</span>
+                            <span class="pro-price">₩499,000</span>
+                        </div>
                     </div>
                 </li>
-
-
 
                 <li>
                     <div class="img_box">
                         <a href="">
-                            <img src="img/Personalized/product_03.jpg" alt="">
+                            <img src="img/Personalized/product_03.jpg" alt="다이슨 코랄 스타일 스트레이트너">
                         </a>
                     </div>
 
                     <div class="txt_box">
                         <a href="">
-                            <h3 class>다이슨 코랄 스타일 스트레이트너</h3>
+                            <h3>다이슨 코랄 스타일 <br> 스트레이트너</h3>
                         </a>
                         <del class="ori-price">₩599,000</del>
-                        <span class="disco">17%</span>
-                        <span class="pro-price">₩499,000</span>
+                        <div class="discount-container">
+                            <span class="disco">17%</span>
+                            <span class="pro-price">₩499,000</span>
+                        </div>
                     </div>
-                    <div class="icon">
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        </ul>
-                    </div>
-
                 </li>
 
                 <li>
                     <div class="img_box">
                         <a href="">
-                            <img src="img/Personalized/product_04.jpg" alt="">
+                            <img src="img/Personalized/product_04.jpg" alt="NEW 다이슨 에어랩 코안다 2x 멀티 스타일러 앤 드라이어">
                         </a>
                     </div>
 
                     <div class="txt_box">
                         <a href="">
-                            <h3 class>NEW 다이슨 에어랩 코안다 <br>
-                                2x 멀티 스타일러 앤 드라이어</h3>
+                            <h3>NEW 다이슨 에어랩 코안다 <br> 2x 멀티 스타일러 앤 드라이어</h3>
                         </a>
                         <span class="pro-price">₩879,000</span>
                     </div>
-
-                    <div class="icon">
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        </ul>
-                    </div>
-
                 </li>
 
                 <li>
-                    <a href="">
-                        <div class="img_box">
-                            <img src="img/Personalized/product_05.jpg" alt="">
-                    </a>
+                    <div class="img_box">
+                        <a href="">
+                            <img src="img/Personalized/product_05.jpg" alt="다이슨 슈퍼소닉 r 헤어드라이어 (재스퍼 플럼) set">
+                        </a>
+                    </div>
 
                     <div class="txt_box">
                         <a href="">
-                            <h3 class>다이슨 슈퍼소닉 r <br>
-                                헤어드라이어 (재스퍼 플럼) set</h3>
+                            <h3>다이슨 슈퍼소닉 r <br> 헤어드라이어 (재스퍼 플럼) set</h3>
                         </a>
                         <span class="pro-price">₩629,000</span>
                     </div>
-                    <div class="icon">
-                        <ul>
-                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        </ul>
-                    </div>
                 </li>
-
             </ul>
         </section>
 
@@ -901,37 +874,34 @@
 
     <!-- 서브페이지설정 -->
     <div id="sub01">
-        제품상세(서브)페이지 1번입니다.
+        <p>제품상세(서브)페이지 1번입니다.</p>
+        
     </div>
 
 
     <!-- 로그인페이지설정 -->
     <div id="sub02">
-        로그인페이지입니다.
         <div class="login_box">
             <div class="logo">
-                <img src="img/login/Dyson_login_logo.png" alt="logo">
+                <img src="img/login/Dyson_login_logo.png" alt="logo" />
             </div>
-            <div class="login-box">
-                <form action="/login" method="POST">
-                    <input type="text" name="username" placeholder="아이디" required>
-                    <input type="password" name="password" placeholder="비밀번호" required>
-                    <button type="submit">로그인</button>
-                </form>
-            </div>
-
-
+            <form class="login_form">
+                <input type="text" name="username" placeholder="아이디" required />
+                <input type="password" name="password" placeholder="비밀번호" required />
+                <button type="submit" class="login_btn">로그인</button>
+                <div class="links">
+                    <a href="#">회원가입</a>
+                    <a href="#">아이디/비밀번호찾기</a>
+                </div>
+                <!-- 네이버 로그인 버튼 -->
+                <div id="naverIdLogin"></div>
+            </form>
         </div>
     </div>
 
 
 
-
-
-
-
-
-    <!-- 탑버튼 -->
+    <!-- 탑버튼 설정-->
     <button id="topBtn" title="맨 위로">Top</button>
 
 

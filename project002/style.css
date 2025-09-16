@@ -37,15 +37,6 @@ body {
 }
 
 
-/* wrap 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-#wrap {
-    position: relative;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
 
 
 
@@ -123,6 +114,17 @@ body {
 
 
 
+/* wrap 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#wrap {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+
 
 /* main 섹션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
@@ -132,6 +134,7 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
+
 }
 
 .main .txtBox {
@@ -139,6 +142,8 @@ body {
     margin: 0 auto;
     color: #fff;
     padding: 200px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .main .txtBox img {
@@ -161,6 +166,7 @@ body {
     height: 100vh;
     top: 0;
     overflow: visible;
+
 }
 
 .main .imgBox img {
@@ -260,10 +266,8 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-top: 120px;
-    margin-bottom: 400px;
-    margin-left: 20px;
-    min-width: 1440px;
+    margin: 120px auto;
+    max-width: 1440px;
 
 }
 
@@ -386,29 +390,70 @@ body {
 
 
 /* 컬러섹션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-.color {}
 
 
-.color img {
-    width: 100%;
-    margin: 120px 0;
+/* 기본적인 스타일 */
+.spacer {
+    margin-top: 400px;
 }
 
-/* 시그니처제품 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 라인 애니메이션 요소 */
+.line-wrapper-container {
+    margin-top: 50px;
+    /* 다른 요소들과의 간격을 조정 */
+}
+
+.line-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* 선의 애니메이션 기본 상태 */
+.line {
+    opacity: 0;
+    transform: scaleX(0) scaleY(0.05);
+    transform-origin: center top;
+    transition: transform 0.5s ease-out, opacity 0.3s ease-out;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 1단계: 중앙에서 좌우로 펼쳐지는 직선 */
+.line.color-expand-x {
+    opacity: 1;
+    transform: scaleX(1) scaleY(0.05);
+}
+
+/* 2단계: 아래로 확장 */
+.line.color-expand-y {
+    transform: scaleX(1) scaleY(1);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* 콘텐츠 섹션 스타일 */
+.line_content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+/* 시그니처제품 설정 */
 .sig {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-bottom: 200px;
     box-sizing: border-box;
+    margin: 0px auto;
+    margin-bottom: 240px;
+    max-width: 1440px;
 }
-
-.sig>p {
-    padding: 0 50px 50px 50px;
-}
-
-.sig .sig_title {}
-
 
 .sig .sig_title h2 {
     padding: 50px 0 20px 50px;
@@ -422,9 +467,7 @@ body {
     font-family: "Pinyon Script", cursive;
     font-size: 60px;
     color: rgba(51, 51, 51, 0.1);
-
 }
-
 
 .sig .sig_title p {
     padding-left: 50px;
@@ -435,12 +478,8 @@ body {
 .sig .list {
     display: flex;
     width: 100%;
-    padding-left: 240px;
     align-items: center;
-
-
 }
-
 
 .sig .list .liner {
     width: 2px;
@@ -451,10 +490,7 @@ body {
             rgba(128, 128, 128, 0.8),
             transparent);
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-    /* ✨ 오른쪽으로 살짝 그림자 */
 }
-
-
 
 .sig .list article {
     display: flex;
@@ -462,7 +498,7 @@ body {
     width: 260px;
     height: 550px;
     position: relative;
-    transition: all 0.8s;
+    transition: all 0.8s ease;
     background-color: #EACECA;
     box-sizing: border-box;
     margin-right: 20px;
@@ -471,11 +507,9 @@ body {
     top: 0;
     left: 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-
-
-
+    overflow: hidden;
+    /* 이미지 튀어나오는 문제 방지 */
 }
-
 
 .sig .list article .num_box {
     width: 130px;
@@ -483,7 +517,8 @@ body {
     padding: 20px 0px 20px 20px;
     margin-left: auto;
     font-size: 28px;
-
+    transition: all 0.4s ease;
+    /* 부드럽게 이동 */
 }
 
 .sig .list article .num_box h2 {
@@ -497,8 +532,6 @@ body {
     font-weight: 400;
 }
 
-
-
 .sig .list article .img_box {
     width: 90%;
     height: auto;
@@ -506,6 +539,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    /* 이미지가 부모 박스를 벗어나지 않도록 */
     padding: 0 12px;
     cursor: pointer;
 }
@@ -514,6 +548,7 @@ body {
     width: 250px;
     height: 250px;
     transition: transform 0.4s ease;
+    object-fit: cover;
 }
 
 .sig .list article p {
@@ -522,21 +557,13 @@ body {
     min-height: 72px;
 }
 
-.sig .list article .icon {}
-
 .sig .list article .icon ul {
     display: flex;
     padding-top: 10px;
     justify-content: right;
     padding-right: 20px;
     padding-bottom: 10px;
-
-
 }
-
-.sig .list article .icon ul li {}
-
-.sig .list article .icon ul li a {}
 
 .sig .list article .price {
     display: none;
@@ -548,11 +575,10 @@ body {
     color: #444;
 }
 
-
-/* 호버시ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
+/* 호버 시 스타일 */
 .sig .list article:hover {
-    width: 400px;
+    width: 300px;
+    /* 너무 크게 늘어나지 않도록 조절 */
 }
 
 .sig .list article:hover .num_box {
@@ -565,11 +591,8 @@ body {
     font-weight: bold;
 }
 
-
-
 .sig .list article:hover .text_icon_row {
     display: block;
-
 }
 
 .sig .list article:hover .text_icon_row p {
@@ -580,27 +603,17 @@ body {
     padding-right: 25px;
 }
 
-.sig .list article:hover .text_icon_row .icon ul {}
-
-.sig .list article:hover .text_icon_row .icon ul li {}
-
 .sig .list article:hover .text_icon_row .icon ul li a:hover i {
     color: #E56C4E;
 }
 
-
 .sig .list article:hover .img_box {
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     padding: 30px 0;
-    transform: scale(1.2)
+    transform: scale(1.1);
+    /* 너무 크게 확장되지 않도록 축소 */
 }
-
-.sig .list article:hover .img_box img {}
 
 .sig .list article:hover .price {
     display: block;
@@ -641,6 +654,7 @@ body {
     overflow: hidden;
     position: relative;
     top: 50px;
+    margin-top: 240px;
 }
 
 .video img {
@@ -659,133 +673,180 @@ body {
 .per {
     width: 100%;
     position: relative;
-    margin-top: 200px;
     top: 0;
     left: 50px;
-
+    margin: 240px auto;
+    max-width: 1440px;
 }
 
-.per h2 {
+
+.per>h2 {
     font-size: 40px;
-
+    margin: 0 auto;
 }
 
-.per .sub_title {
+.per>.sub_title {
     position: absolute;
-    top: -35px;
-    left: 200px;
+    top: -40px;
+    left: 150px;
     font-family: "Pinyon Script", cursive;
     font-size: 60px;
     color: rgba(51, 51, 51, 0.1);
-
 }
+
+
+
 
 .per>ul {
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
-
-
-
 
 .per>ul>li {
+
     box-sizing: border-box;
-    border: 1px solid #E4A8A8;
-    border-radius: 10px;
+    width: 18%;
+    height: 300px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: skewY(-10deg);
+    /* 사선으로 기울이기 */
+    border: 5px solid #E4A8A8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    /* 테두리, 그림자, 확대 애니메이션 */
+    background: linear-gradient(45deg, #f7b731, #E56C4E);
+    border-radius: 15px
+}
+
+
+.per>ul>li .img_box {
+    width: 100%;
+    height: 100%;
+    /* 이미지 크기 고정 */
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.5s ease;
+    /* 이미지 사라짐 */
+}
+
+.per>ul>li .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 이미지 비율 유지 */
+}
+
+
+.per>ul>li:hover .img_box img {
+    opacity: 0;
+    /* 이미지 사라지게 하기 */
+}
+
+
+.per>ul>li .txt_box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    /* 기본적으로 텍스트 숨김 */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* 호버 시 텍스트 등장 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 텍스트 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
     text-align: center;
-    margin: 50px;
-    width: 30%;
-    box-sizing: border-box;
-
-}
-
-.per>ul>li:nth-child(1) {
-    box-sizing: border-box;
-    padding: 20px;
-    border: 1px solid #E4A8A8;
-    border-radius: 10px;
-    text-align: center;
-    margin: 50px;
-    width: 30%;
-}
-
-.per>ul>li:nth-child(2) {
-    width: 30%;
-}
-
-.per>ul>li:nth-child(3) {
-    width: 28%;
-}
-
-.per>ul>li:nth-child(4) {
-    width: 28%;
-}
-
-.per>ul>li:nth-child(5) {
-    width: 28%;
+    /* 텍스트 중앙 정렬 */
+    border-radius: 12px;
 }
 
 
+.per>ul>li:hover .txt_box {
+    opacity: 1;
+    transform: translateY(0);
+    /* 텍스트 부드럽게 나타나기 */
+}
 
 
+.per>ul>li .txt_box h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #fff;
+}
 
 
-.per>ul>li .img_box {}
+.per>ul>li .txt_box .pro-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #fff;
+}
 
-.per>ul>li .img_box a {}
-
-.per>ul>li .img_box img {}
-
-
-
-
-.per>ul>li .txt_box {}
-
-.per>ul>li .txt_box a {}
-
-.per>ul>li .txt_box h3 {}
 
 .per>ul>li .txt_box .ori-price {
-    display: block;
-    color: #666666;
-    font-size: 14px;
+    font-size: 16px;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+
+.per>ul>li .txt_box .discount-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .per>ul>li .txt_box .disco {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #E56C4E;
 }
 
-.per>ul>li .txt_box .pro-price {
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 10px;
-}
 
-.per>ul>li .icon {}
-
-.per>ul>li .icon ul {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-}
-
-.per>ul>li .icon ul li {}
-
-.per>ul>li .icon ul li a {}
-
-.per>ul>li .icon ul li a:hover i {
-    color: #E56C4E;
+.per>ul>li:hover {
+    transform: skewY(0deg) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #E56C4E;
+    background: linear-gradient(45deg, #E56C4E, #f7b731);
 }
 
 
 
+.per>ul>li:hover .txt_box h3,
+.per>ul>li:hover .txt_box .pro-price {
+    color: #fff;
+}
 
+.per>ul>li .img_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 2;
+}
 
-
+.per>ul>li:hover .img_box::before {
+    transform: translateX(100%);
+}
 
 
 
@@ -800,6 +861,7 @@ body {
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    margin: 120px auto;
 
 }
 
@@ -987,8 +1049,8 @@ body {
     position: relative;
     left: 0;
     top: 0;
-    margin-bottom: 120px;
-    padding: 100px 0px 100px 150px;
+    margin: 120px auto;
+    max-width: 1440px;
 }
 
 .event .txt_box {
@@ -1003,8 +1065,8 @@ body {
 
 .event .txt_box .sub_title {
     position: absolute;
-    top: 65px;
-    left: 350px;
+    top: -35px;
+    left: 250px;
     font-family: "Pinyon Script", cursive;
     font-size: 60px;
     color: rgba(51, 51, 51, 0.1);
@@ -1189,38 +1251,48 @@ body {
 
 
 @keyframes fadeDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* 공통 애니메이션 */
 .event_01,
 .event_02,
 .event_03 {
-  opacity: 0;
-  animation-name: fadeDown;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+    opacity: 0;
+    animation-name: fadeDown;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 /* 순차적으로 딜레이 줘서 하나씩 등장 */
 .event_01 {
-  animation-delay: 0.2s;
-}
-.event_02 {
-  animation-delay: 0.5s;
-}
-.event_03 {
-  animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 
+.event_02 {
+    animation-delay: 0.8s;
+}
+
+.event_03 {
+    animation-delay: 1.2s;
+}
+
+/* show 클래스 추가 - 스크롤 시 이 클래스를 추가하여 애니메이션을 트리거 */
+.event_01.show,
+.event_02.show,
+.event_03.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -1435,7 +1507,9 @@ footer .footer_txt {
     cursor: pointer;
     font-size: 20px;
     color: #333;
+    flex-direction: column;
 }
+
 
 
 .shopping .cart_page .line {
@@ -1510,10 +1584,14 @@ footer .footer_txt {
     cursor: pointer;
 }
 
-/* 서브페이지01설정  */
+
+
+
+/* 서브페이지01설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 #sub01 {
     position: absolute;
     width: 100%;
+    height: auto;
     left: 0;
     top: 80px;
     display: none;
@@ -1521,32 +1599,121 @@ footer .footer_txt {
 
 
 
-/* 로그인페이지 설정 */
+/* 서브페이지02 로그인창 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 #sub02 {
     background-image: url(img/login/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: absolute;
     width: 100%;
-    height: auto;
-    top: -30px;
+    height: 100vh;
+    top: 0;
     left: 0;
     display: none;
+    /* 로그인 페이지가 보여지도록 수정 */
     overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-#sub02 .login.box {
-    width: 600px;
+#sub02 .login_box {
+    background-color: #fff;
+    width: 500px;
     height: 600px;
+    border: 1px solid #ddd;
+    margin: 10% auto;
+    padding: 60px 50px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#sub02 .login_box .logo img {
+    width: 102px;
+    height: 40px;
+    margin-bottom: 50px;
+}
 
+#sub02 .login_box .login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#sub02 .login_box .login_form input[type="text"],
+#sub02 .login_box .login_form input[type="password"] {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
 
+#sub02 .login_box .login_form input[type="text"]:focus,
+#sub02 .login_box .login_form input[type="password"]:focus {
+    border-color: #db9b9b;
+}
 
+#sub02 .login_box .login_form .login_btn {
+    width: 400px;
+    height: 36px;
+    background-color: #db9b9b;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
 
+#sub02 .login_box .login_form .login_btn:hover {
+    background-color: #c78b8b;
+}
 
+#sub02 .login_box .login_form .links {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
 
+#sub02 .login_box .login_form .links a {
+    color: #666;
+    text-decoration: none;
+}
 
+#sub02 .login_box .login_form .naver_login_btn {
+    width: 400px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 
+#sub02 .login_box .login_form .naver_login_btn img {
+    width: 18px;
+    height: 18px;
+}
 
 
 
@@ -1554,6 +1721,8 @@ footer .footer_txt {
 
 
 /* 전체사이즈 설정 */
+
+
 
 
 /* 전체사이즈설정 */

@@ -1,58 +1,21 @@
 $(document).ready(function () {
-
-
-
+    // .main_btn 클릭 시 .main에 slide 클래스 토글
     $('.main_btn').click(function () {
-        $('.main').toggleClass('slide');
+        // 슬라이드 전환
+        $('.main').addClass('slide');
     });
 
+    // 뒤로 가기 버튼 클릭
+    $('.main_btn_back').on('click', function () {
+        // 다시 첫 번째 이미지로 돌아가기
+        $('.main').removeClass('slide');
+    });
 
-
-  // 앞으로 가기 버튼 클릭
-
-        // 뒤로 가기 버튼 클릭
-        $('.main_btn_back').on('click', function () {
-            $('.main').removeClass('slide');
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-    // 브랜드 소개 아래서 위로 등장효과 (일회만 실행할 경우) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-    // const items = document.querySelectorAll(".brand ul li");
-
-    // const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach(entry => {
-    //         if (entry.isIntersecting) {
-    //             entry.target.classList.add("visible");
-    //             observer.unobserve(entry.target); // 요소 한 번만 실행하고 감지 종료
-    //         }
-    //     });
-    // }, {
-    //     threshold: 0.1
-    // });
-
-    // items.forEach((item, index) => {
-    //     item.style.transitionDelay = `${index * 0.3}s`;
-    //     observer.observe(item);
-    // }); 
-
-
-    // 브랜드 소개 아래서 위로 등장효과 (스크롤마다 실행할 경우 ) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    // 브랜드 소개 아래서 위로 등장효과 (스크롤마다 실행)
     const $items = $(".brand ul li");
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             const $target = $(entry.target);
-
             if (entry.isIntersecting) {
                 const index = $items.index($target);
                 $target.css("transition-delay", `${index * 0.3}s`);
@@ -70,129 +33,171 @@ $(document).ready(function () {
         observer.observe(this);
     });
 
+    // 컬러섹션 애니메이션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    const $lineImage = $('#colorLineImage');
+    const $lineWrapper = $('#colorLineWrapper');
 
+    $(window).on('scroll', function () {
+        const windowHeight = $(window).height();
+        const elementTop = $lineWrapper.offset().top;
+        const elementBottom = elementTop + $lineWrapper.outerHeight();
 
+        // 뷰포트에서 50% 이상 보이는지 확인
+        if (elementBottom >= $(window).scrollTop() + windowHeight / 2 && elementTop <= $(window).scrollTop() + windowHeight / 2) {
+            if (!$lineImage.hasClass('color-expand-x')) {
+                $lineImage.addClass('color-expand-x');
+            }
 
+            setTimeout(function () {
+                if (!$lineImage.hasClass('color-expand-y')) {
+                    $lineImage.addClass('color-expand-y');
+                }
+            }, 500); // 좌우 확장 시간과 동일
+        } else {
+            $lineImage.removeClass('color-expand-x color-expand-y');
+        }
+    });
 
-
-
-
-
-    // 비디오부분 이미지 205장 마우스무브 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-
+    // 비디오부분 이미지 205장 마우스무브 설정
     let imgs = '';
-
-    // 1부터 205까지 반복
     for (let a = 1; a <= 205; a++) {
-        let padded = a.toString().padStart(3, '0'); // 3자리수로 맞추기
+        let padded = a.toString().padStart(3, '0');
         imgs += `<img src="img/video/cap/dyson_airwrap_${padded}.jpg" alt="">`;
     }
-
-    // 이미지들을 .video 섹션에 삽입
     $('.video').html(imgs);
 
-    // 처음엔 첫 번째 이미지만 보이기
     $('.video img').hide();
     $('.video img').eq(0).show();
 
-    // 마우스 움직이면 이미지 변경
     $('body').mousemove(function (e) {
         let x = e.pageX;
         let wid = $(window).width();
-
         let pic = Math.floor((x / wid) * 205);
-
-        if (pic >= 205) pic = 204;
-        if (pic < 0) pic = 0;
-
+        pic = Math.min(Math.max(pic, 0), 204); // 0 <= pic <= 204
         $('.video img').hide();
         $('.video img').eq(pic).show();
     });
 
-
-
-
-
-    // 서브페이지 연결하기.
-
+    // 서브페이지 연결ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     $('.gnb li').eq(0).click(function (e) {
-
         e.preventDefault();
-        $('#wrap').fadeOut()
-        $('#sub01').fadeIn()
-
-    }); 
-
+        $('#wrap').fadeOut();
+        $('#sub01').fadeIn();
+    });
 
 
-    // 로그인페이지 연결하기
+    // 로그인 페이지 연결ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     $('.util li').eq(0).click(function (e) {
-
         e.preventDefault();
-        $('#wrap').fadeOut()
-        $('#sub02').fadeIn()
 
+        // 메인 화면을 숨기고 로그인 페이지를 표시
+        $('#wrap').fadeOut(300, function () {
+            // fadeOut()이 끝난 후에 로그인 페이지를 보여줍니다.
+            $('#sub02').fadeIn(300);
+        });
     });
 
     $('.util li').eq(1).click(function (e) {
-
         e.preventDefault();
-        $('#wrap').fadeOut()
-        $('#sub02').fadeIn()
 
+        // 메인 화면을 숨기고 로그인 페이지를 표시
+        $('#wrap').fadeOut(300, function () {
+            // fadeOut()이 끝난 후에 로그인 페이지를 보여줍니다.
+            $('#sub02').fadeIn(300);
+        });
     });
 
 
 
 
-    // logo를 클릭했을 때, 메인페이지 나타나기
-
+    // logo 클릭 시 메인페이지로 돌아가기ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     $('.logo').click(function () {
-        $('#sub01').fadeOut()
-        $('#wrap').fadeIn()
-
+        $('#sub01').fadeOut();
+        $('#wrap').fadeIn();
     });
 
-
-    // 장바구니 나왔다들어가기.
-    // 하나의 요소당 이벤트는 1번?1개만 걸수있음.
-    let click = 0
+    // 장바구니 나왔다 들어가기ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     $('.icon').click(function () {
-        click++;
-        if (click == 2) click = 0;
-        console.log(click)
-
-        if (click == 1) {
-            $(this).parent('.shopping').addClass('on')
-        }
-        else {
-            $(this).parent('.shopping').removeClass('on')
-
-        }
-        // 이 조건은 신호등과 같다. 기계들이 돌아가는것에는 코드들이 들어간다.
-        // 빨간불일떄 누르면 초록불이되라 등.
-
+        $(this).parent('.shopping').toggleClass('on');
     });
 
 
-    // 장바구니의 수치 올라가기
+    // 장바구니 닫기 (x 버튼 클릭 시)
+    $('.cart-header .close-btn').click(function () {
+        $('.shopping').removeClass('on');  // 장바구니 창을 닫는다.
+        cartNum = 0;  // 장바구니 수량 초기화
+        $(".icon span").text(cartNum);  // 아이콘의 수량도 초기화
+    });
+
+    // 장바구니 수치 올라가기
     let cartNum = 0;
 
-    $('.cart p').click(function (e) {
-        e.preventDefault()
-        cartNum++;
-        $('.icon span').text(cartNum)
+    // 장바구니 항목 추가
+    $('.add-to-cart').click(function (e) {
+        e.preventDefault();
+        const productName = $(this).data('product-name');
+        const productPrice = $(this).data('product-price');
+        const productId = $(this).data('product-id');
+        addItemToCart(productName, productPrice, productId);
+    });
 
+    // 장바구니 항목 추가 함수
+    function addItemToCart(name, price, id) {
+        const tableBody = $(".cart-table tbody");
+        const newItem = `
+            <tr data-product-id="${id}">
+                <td>${name}</td>
+                <td>${price}</td>
+                <td><button class="remove-item">삭제</button></td>
+            </tr>
+        `;
+        tableBody.append(newItem);
+        updateCartCount();
+        updateTotal();
+    }
 
+    // 장바구니 수량 갱신
+    function updateCartCount() {
+        const cartItemCount = $(".cart-table tbody tr").length;
+        $(".icon span").text(cartItemCount);
+    }
 
+    // 장바구니 총 합계 갱신
+    function updateTotal() {
+        let total = 0;
+        $(".cart-table tbody tr").each(function () {
+            const price = $(this).find("td:nth-child(2)").text().replace("원", "").trim();
+            total += parseInt(price);
+        });
+        $(".total-section .pri").text("총 합계금액 " + total);
+    }
+
+    // 장바구니 항목 삭제
+    $(document).on('click', '.remove-item', function () {
+        $(this).closest('tr').remove();
+        updateCartCount();
+        updateTotal();
+    });
+
+    // 전체삭제 버튼 클릭 시 장바구니 초기화
+    $(".btn-delete").click(function () {
+        $(".cart-table tbody").empty();
+        updateCartCount();
+        updateTotal();
+    });
+
+    // 결제하기 버튼 클릭 시
+    $(".btn-pay").click(function () {
+        window.location.href = "payment.html"; // 결제 페이지로 이동
     });
 
 
 
-    // 탑버튼 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+    // 탑버튼 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {  // 200px 이상 스크롤 시 버튼 보임
+        if ($(this).scrollTop() > 200) {
             $('#topBtn').fadeIn();
         } else {
             $('#topBtn').fadeOut();
@@ -200,18 +205,39 @@ $(document).ready(function () {
     });
 
     $('#topBtn').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 500);  // 0.5초 동안 맨 위로 부드럽게 스크롤
+        $('html, body').animate({ scrollTop: 0 }, 500);
     });
 
 
 
 
 
+    // 이벤트 섹션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    // 스크롤 시 애니메이션 효과를 적용할 함수
+    // 스크롤 시 애니메이션 실행
+    function animateOnScroll() {
+        var windowHeight = $(window).height();
+        var scrollTop = $(window).scrollTop();
+
+        // 각 요소의 위치를 체크하고 화면에 들어오면 애니메이션을 시작
+        $('.event_01, .event_02, .event_03').each(function () {
+            var elementOffset = $(this).offset().top;
+
+            // 요소가 화면에 50% 이상 보일 때 애니메이션 실행
+            if (scrollTop + windowHeight * 0.5 > elementOffset) {
+                // 애니메이션 시작
+                $(this).addClass('show');
+            }
+        });
+    }
+
+    // 스크롤 시 애니메이션 실행
+    $(window).on('scroll', function () {
+        animateOnScroll();
+    });
+
+    // 처음 로드 시에도 애니메이션 실행
+    animateOnScroll();
 
 
-
-
-
-
-
-})
+});
