@@ -27,14 +27,18 @@
 ### ⭐ 프로젝트 설명
 단순화되어 있던 기존사이트를 보다 편리하게 사용가능 하도록 주요기능과 핵심정보를 추가하여
 리뉴얼한 프로젝트 입니다.
-큰 폰트와 단순한 레이아웃으로 리뉴얼한 프로젝트입니다.  
 
-- 메인컬러 : 네이비 / 포인트컬러 : 옐로우  
-- 메인페이지 + 로그인 모달창 + 공지사항 페이지 제작  
+- 메인컬러 : 우주와 몽환을 상징하는 딥퍼플 + 에너지와 젊음을 담은 생기 넘치는 포인트 컬러,
+어둠 속 별빛처럼 빛나는 하이라이트, 그리고 메탈릭 실버의 미래지향적 감성을 조화롭게 담아냄
+- 메인페이지 + 예약 및 예매창 + 공지사항 페이지 제작 + 구글지도 연동 
 
 ### 🚀 링크
-- [무드보드](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=670-428&t=2VvaSvF339vuLiNH-1)
-- [와이어프레임 & 디자인](링크)
+- [무드보드] (https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=39-25&t=2VvaSvF339vuLiNH-1)
+- [인포메이션 아키텍쳐](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=670-428&t=2VvaSvF339vuLiNH-1)
+- [플로우차트](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=216-517&t=2VvaSvF339vuLiNH-1)
+- [와이어프레임](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=254-1059&t=2VvaSvF339vuLiNH-1)
+- [디자인](https://www.figma.com/proto/YXgLbo9G55u14hgSPqYRKF/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EC%9D%B8%EC%B2%9C%ED%8E%9C%ED%83%80%ED%8F%AC%ED%8A%B8%EB%9D%BD%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81?node-id=393-1107&t=2VvaSvF339vuLiNH-1)
+- [코드 저장소](링크)
 - [최종 사이트](링크)
 
 ### 👀 페이지 미리보기
