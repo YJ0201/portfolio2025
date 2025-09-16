@@ -64,7 +64,7 @@
 - [와이어프레임](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=106-102&t=IUIBkvGtfckz9jJ7-1)
 - [디자인 시안(메인)](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=537-112&t=IUIBkvGtfckz9jJ7-1)
 - [디자인 시안(서브)](https://www.figma.com/proto/oO8yfyEfvP0VJYAikoJGLl/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%8A%A8_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B82?node-id=1-4&t=IUIBkvGtfckz9jJ7-1)
-- [코드 저장소]([링크](https://github.com/YJ0201/portfolio2025/tree/main/project002))
+- [코드 저장소](https://github.com/YJ0201/portfolio2025/tree/main/project002)
 - [배포 사이트](https://yj0201.github.io/portfolio2025/project002/)
 
 ### 👀 페이지 미리보기
