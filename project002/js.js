@@ -11,6 +11,7 @@ $(document).ready(function () {
         $('.main').removeClass('slide');
     });
 
+
     // 브랜드 소개 아래서 위로 등장효과 (스크롤마다 실행)
     const $items = $(".brand ul li");
     const observer = new IntersectionObserver((entries) => {
@@ -90,9 +91,9 @@ $(document).ready(function () {
     $('.util li').eq(0).click(function (e) {
         e.preventDefault();
 
-        // 메인 화면을 숨기고 로그인 페이지를 표시
+        // 메인 화면을 숨기고 로그인 페이지 표시
         $('#wrap').fadeOut(300, function () {
-            // fadeOut()이 끝난 후에 로그인 페이지를 보여줍니다.
+            // fadeOut()이 끝난 후에 로그인 페이지 노출
             $('#sub02').fadeIn(300);
         });
     });
@@ -102,7 +103,7 @@ $(document).ready(function () {
 
         // 메인 화면을 숨기고 로그인 페이지를 표시
         $('#wrap').fadeOut(300, function () {
-            // fadeOut()이 끝난 후에 로그인 페이지를 보여줍니다.
+            // fadeOut()이 끝난 후에 로그인 페이지 노출
             $('#sub02').fadeIn(300);
         });
     });
@@ -188,10 +189,18 @@ $(document).ready(function () {
 
     // 결제하기 버튼 클릭 시
     $(".btn-pay").click(function () {
-        window.location.href = "payment.html"; // 결제 페이지로 이동
+        $("#sub02").show(); // 로그인 페이지로 이동
     });
 
+    $(".btn-pay").click(function () {
+        $("#sub02").fadeIn();
+        $("body").css("overflow", "hidden"); // 스크롤 방지
+    });
 
+    // 로그인창의 로고클릭시 메인으로 이동
+    $(".login_logo").click(function () {
+        window.location.href = "index.html";
+    });
 
 
 
@@ -213,13 +222,12 @@ $(document).ready(function () {
 
 
     // 이벤트 섹션 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-    // 스크롤 시 애니메이션 효과를 적용할 함수
     // 스크롤 시 애니메이션 실행
     function animateOnScroll() {
         var windowHeight = $(window).height();
         var scrollTop = $(window).scrollTop();
 
-        // 각 요소의 위치를 체크하고 화면에 들어오면 애니메이션을 시작
+        //화면에 들어오면 애니메이션 시작
         $('.event_01, .event_02, .event_03').each(function () {
             var elementOffset = $(this).offset().top;
 
@@ -236,8 +244,20 @@ $(document).ready(function () {
         animateOnScroll();
     });
 
-    // 처음 로드 시에도 애니메이션 실행
+    // 처음 애니메이션 실행
     animateOnScroll();
+
+
+    // 네이버 로그인 연동
+var naver_id_login = new naver_id_login("XN7o8u2SfR4iAdSpZGPj", "YOUR_CALLBACK_URL");
+var state = naver_id_login.getUniqState();
+naver_id_login.setButton("green", 1, 60);
+naver_id_login.setDomain("YOUR_SERVICE_URL");
+naver_id_login.setState(state);
+naver_id_login.setPopup();
+naver_id_login.init_naver_id_login();
+
+
 
 
 });
