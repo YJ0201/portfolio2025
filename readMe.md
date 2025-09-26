@@ -92,12 +92,13 @@
 
 ### 🚀 링크
 - [디자인 시안](https://www.figma.com/proto/561zaSyv2LPGIUoeyut8Go/-%EA%B7%B8%EB%A6%B0%EC%95%84%ED%8A%B8-PIXAR_UP_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83?node-id=200-593&t=BmWGQ0i2ngzcwSNb-1)
+- [코드 저장소](https://github.com/YJ0201/portfolio2025/tree/main/project003)
 - [배포사이트](https://yj0201.github.io/portfolio2025/project003/)
 
 ### 👀 페이지 미리보기
 | 메인 섹션 | 상세 섹션 |
 |----------|-----------|
-| ![메인](이미지주소) | 
+| ![메인](up_mockup.png) | 
 
 ---
 
