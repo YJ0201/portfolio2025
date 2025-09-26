@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixar UP project03</title>
+
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리CDN연결 -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 외부스크립트연결 -->
+    <script src="js.js"></script>
+
+    <!-- 폰트어썸연결 -->
+    <script src="https://kit.fontawesome.com/6723bb80e4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 헤더설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <header class="header">
+        <div class="gnb">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a>
+                        <div class="balloons-container">
+                            <div class="balloon red"></div>
+                            <div class="balloon blue"></div>
+                            <div class="balloon green"></div>
+                            <div class="balloon yellow"></div>
+                            <div class="balloon purple"></div>
+                        </div>
+                    </li>
+                    <li><a href="#Cast">Cast</a>
+                        <div class="balloons-container">
+                            <div class="balloon red"></div>
+                            <div class="balloon blue"></div>
+                            <div class="balloon green"></div>
+                            <div class="balloon yellow"></div>
+                            <div class="balloon purple"></div>
+                        </div>
+                    </li>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/Nav/LOGO_WHITE.png" alt="logo">
+                        </a>
+                    </div>
+                    <li><a href="#Moments">Moments</a>
+                        <div class="balloons-container">
+                            <div class="balloon red"></div>
+                            <div class="balloon blue"></div>
+                            <div class="balloon green"></div>
+                            <div class="balloon yellow"></div>
+                            <div class="balloon purple"></div>
+                        </div>
+                    </li>
+                    <li><a href="#Stories">Stories</a>
+                        <div class="balloons-container">
+                            <div class="balloon red"></div>
+                            <div class="balloon blue"></div>
+                            <div class="balloon green"></div>
+                            <div class="balloon yellow"></div>
+                            <div class="balloon purple"></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- 홈 메인설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <section id="Home">
+
+        <div class="m_img"><img src="img/Home/all.png" alt=""></div>
+        <div class="main_logo"><img src="img/Home/main_logo.png" alt=""></div>
+
+        <div class="main_text">
+            <p>"Adventure is out there!"</p>
+            <p>잊지 못할 모험, 지금 시작됩니다.</p>
+        </div>
+
+        <div class="scroll-arrow">
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+
+    </section>
+
+
+
+    <!-- Cast 설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+   <section id="Cast">
+        <button class="page-arrow prev" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="page-arrow next" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="main_book">
+            <div class="mbook_img">
+                <img src="img/Cast/main_book.png" alt="">
+            </div>
+
+            <div class="main_txt">
+                <ul>
+                    <li class="on">
+                        <h3>Carl Fredricksen</h3>
+                        <img src="img/Cast/Carl.png" alt="">
+                        <div class="txt">
+                            <div>
+                                <span>이름</span>
+                                <p>칼 프레드릭슨</p>
+                            </div>
+
+                            <div>
+                                <span>나이</span>
+                                <p>80세</p>
+                            </div>
+
+                            <div>
+                                <span>직업</span>
+                                <p>풍선 판매원(은퇴) 및 모험가</p>
+                            </div>
+
+                            <div>
+                                <span>특징</span>
+                                <p>칼 프레드릭슨은 어린 시절부터 <br>
+                                    모험을 꿈꿨지만, 사랑하는 아내 엘리와의<br>
+                                    평범한 삶에 안주하며 그 꿈을 뒤로한 인물이다.<br>
+                                    엘리의 죽음 이후 그는 외롭고 고집스러운<br>
+                                    노인이 되었지만, 소년 러셀과의 여정을 통해<br>
+                                    다시 삶의 의미를 되찾고,<br>
+                                    닫혀 있던 마음을 열어가며 변화해간다.
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Russell</h3>
+                        <img src="img/Cast/Russell.png" alt="">
+                        <div class="txt">
+                            <div>
+                                <span>이름</span>
+                                <p>러셀</p>
+                            </div>
+
+                            <div>
+                                <span>나이</span>
+                                <p>10살</p>
+                            </div>
+
+                            <div>
+                                <span>직업</span>
+                                <p>야생 탐험대 소년 탐험가</p>
+                            </div>
+
+                            <div>
+                                <span>특징</span>
+                                <p>러셀은 밝고 말이 많으며 호기심이 많은 <br>
+                                    열 살 소년으로, 야생 탐험대 배지를 <br>
+                                    모두 모으기 위해 마지막 배지인<br>
+                                    노인 돕기미션을 수행하던 중 칼과 함께<br>
+                                    모험을 떠나게 된다. <br>
+                                    엉뚱하고 수다스럽지만 진심 어린 <br>
+                                    배려심을 가진 러셀은, 칼의 굳게 닫힌 <br>
+                                    마음을 열게 해주는 따뜻한 존재로, <br>
+                                    그의 순수함은 이야기 전반에 <br>
+                                    활기를 불어넣는다. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Dug</h3>
+                        <img src="img/Cast/Dug.png" alt="">
+                        <div class="txt">
+                            <div>
+                                <span>이름</span>
+                                <p>더그</p>
+                            </div>
+
+                            <div>
+                                <span>나이</span>
+                            <p>성견</p>
+                            </div>
+
+                            <div>
+                                <span>직업</span>
+                                <p>정찰견</p>
+                            </div>
+
+                            <div>
+                                <span>특징</span>
+                                <p>더그는 특수 목걸이 덕분에 말을 할 수 <br>
+                                    있는 황금 리트리버로, 천진난만하고 <br>
+                                    충성심이 강하며, 새로운 친구를 <br>
+                                    진심으로 따르는 따뜻한 성격을 지녔다. <br>
+                                    원래는 찰스 먼츠의 정찰견이었지만, <br>
+                                    칼과 러셀을 만나 진정한 유대와 <br>
+                                    가족의 의미를 배우며 함께 모험하게 된다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Kevin</h3>
+                        <img src="img/Cast/Kevin.png" alt="">
+                        <div class="txt">
+                            <div>
+                                <span>이름</span>
+                                <p>케빈</p>
+                            </div>
+
+                            <div>
+                                <span>나이</span>
+                            <p>성체</p>
+                            </div>
+
+                            <div>
+                                <span>직업</span>
+                                <p>멸종위기종</p>
+                            </div>
+
+                            <div>
+                                <span>특징</span>
+                                <p>
+                                    케빈은 영화 속에서 칼과 러셀이 만나는 <br>
+                                    희귀하고 거대한 새로, 다채로운 색깔과 <br>
+                                    독특한 외모를 가진 상상의 동물이다. <br>
+                                    처음에는 쫓기는 존재였지만, 러셀과 칼의 <br>
+                                    보호를 받으며 이야기의 중요한 동료가 된다. <br>
+                                    케빈은 자유와 자연의 상징이자, <br>
+                                    모험의 재미를 더해주는 캐릭터이다.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Charles Muntz</h3>
+                        <img src="img/Cast/Charles Muntz.png" alt="">
+                        <div class="txt">
+                            <div>
+                                <span>이름</span>
+                                <p>찰스 먼츠</p>
+                            </div>
+
+                            <div>
+                                <span>나이</span>
+                                <p>80대 초반</p>
+                            </div>
+
+                            <div>
+                                <span>직업</span>
+                                <p>모험가이자 수집가</p>
+                            </div>
+
+                            <div>
+                                <span>특징</span>
+                                <p>
+                                    찰스 먼츠는 한때 유명했던 탐험가였지만, <br>
+                                    자신의 명예에 집착하며 <br>
+                                    점점 광기에 사로잡힌 인물이다. <br>
+                                    그는 타인을 믿지 못하고 오로지<br>
+                                    자신의 목표만을 좇으며, <br>
+                                    점점 고립된 삶을 살게 된다.
+
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub_book">
+            <img src="img/Cast/book.png" alt="">
+        </div>
+        <div class="sub_book_02">
+            <img src="img/Cast/paradise_gpt.png" alt="">
+        </div>
+        <div class="sub_book_03">
+            <img src="img/Cast/love.png" alt="">
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Moments설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div id="Moments">
+        <video muted autoplay loop>
+            <!-- 오디오를 넣을 경우 audio태그로 넣으면 됨 -->
+            <source src="img/Moments/paradise.mp4" type="video/mp4">
+        </video>
+
+        <section class="circle">
+            <article class="face1">
+                <h1></h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_01.jpg" alt="">
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="face2">
+                <h1>💑</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_02.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="face3">
+                <h1>❤️</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_03.jpg" alt="">
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="face4">
+                <h1></h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_04.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="face5">
+                <h1>😆</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_05.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="face6">
+                <h1>😝</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_06.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="face7">
+                <h1>😣</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_07.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="face8">
+                <h1>🙏</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_08.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+            <article class="face9">
+                <h1>☹️</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_09.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+            <article class="face10">
+                <h1>😌</h1>
+                <div class="inner">
+                    <div>
+                        <img src="img/Moments/album/album_10.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+
+
+
+    </div>
+
+
+
+
+    <!-- Moments설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <section id="Stories">
+        <div class="moni">
+            <img src="img/Stories/Monitor.png" alt="monitor">
+
+            <div class="vid">
+                <video autoplay muted loop controls>
+                    <source src="img/Stories/teaser_01.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="kd">
+            <img src="img/Stories/kd.png" alt="">
+        </div>
+        <div class="cr">
+            <img src="img/Stories/cr.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- 푸터설정ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <footer>
+        <div class="footer_txt">
+            <p>본 사이트는 포트폴리오용으로 제작된 사이트입니다.</p>
+            <p>copyright &copy; 2025. YJ .All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
